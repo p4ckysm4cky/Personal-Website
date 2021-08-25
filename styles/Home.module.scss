@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+
 $darkBlue: rgb(32, 42, 56);
+
+
 
 
 .pageStructure {
@@ -18,12 +22,28 @@ $darkBlue: rgb(32, 42, 56);
 }
 
 .about {
-  color: red;
+  width: 100%;
   background-color: $darkBlue;
   align-self: center;
   margin: 0px;
   margin-left: auto;
   height: 100vh;
   width: 30vw;
+  display: flex;
   
+}
+
+.aboutText {
+  width: 100%;
+  color: white;
+  align-self: center;
+  display:flex;
+  flex-direction: column;
+  h2 {
+    margin: auto;
+  }
+  p {
+    margin: 10px;
+    font-size: 20px;
+  }
 }
