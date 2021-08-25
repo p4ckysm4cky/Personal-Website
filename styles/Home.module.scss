@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
 
 $darkBlue: rgb(32, 42, 56);
+$lightBlue: rgba(147,181,227,1);
 
 
 
 
 .pageStructure {
   height: 100vh;
+  h2 {
+    font-size: 30px;
+  }
 }
 
 
@@ -17,8 +21,10 @@ $darkBlue: rgb(32, 42, 56);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
+  // This is the secret for an unmoving image
+  background-attachment: fixed; 
   display: flex;
+  border-bottom: 2px solid $darkBlue;
 }
 
 .about {
@@ -47,3 +53,24 @@ $darkBlue: rgb(32, 42, 56);
     font-size: 20px;
   }
 }
+
+.project {
+  padding: 30px;
+  color: $darkBlue;
+  background-color: white;
+  h2 {
+    text-decoration: none;
+    border-bottom: 1px solid $lightBlue;
+    box-shadow: 0 -3px 0 $lightBlue inset;
+      
+  }
+
+  .container {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    
+  }
+}
+
