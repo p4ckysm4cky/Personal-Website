@@ -1,0 +1,29 @@
+$darkBlue: rgb(32, 42, 56);
+
+
+.pageStructure {
+  height: 100vh;
+}
+
+
+.banner {
+  background-image: url(../images/banner_background.png);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+}
+
+.about {
+  color: red;
+  background-color: $darkBlue;
+  align-self: center;
+  margin: 0px;
+  margin-left: auto;
+  height: 100vh;
+  width: 30vw;
+  
+}
