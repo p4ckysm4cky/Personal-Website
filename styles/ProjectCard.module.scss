@@ -1,5 +1,9 @@
 $darkBlue: rgb(32, 42, 56);
 $lightBlue: rgba(147,181,227,1);
+$deskop:1200px;
+$laptop:1024px;
+$tablet:768px;
+$phone:480px;
 
 
 
@@ -37,11 +41,21 @@ $lightBlue: rgba(147,181,227,1);
             font-size: 25px;
             text-decoration: none;
             // text-decoration: underline;
+            @media(max-width:$phone) {
+                font-size: 20px;
+            }
         }
         p {
             font-size: 16px;
             margin:5px;
+            @media(max-width:$phone) {
+                font-size: 13px;
+            }
         }
+   
+    }
+    @media(max-width:$phone) {
+        grid-template-columns: 250px;
     }
 }
 

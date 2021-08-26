@@ -1,3 +1,14 @@
+$deskop:1200px;
+$laptop:1024px;
+$tablet:768px;
+$phone:480px;
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+
+$darkBlue: rgb(32, 42, 56);
+$lightBlue: rgba(147,181,227,1);
+
+
 html,
 body {
   padding: 0;
@@ -8,4 +19,29 @@ body {
 
 a {
   text-decoration: none;
+}
+
+footer {
+  margin: 0px;
+  background-color: $darkBlue;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  p {
+    color: white;
+    font-size: 20px;
+    align-self: center;
+    @media (max-width: $tablet) {
+      font-size: 13px;
+    }
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+  }
 }

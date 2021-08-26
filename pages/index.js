@@ -1,6 +1,7 @@
 import styles from '../styles/Home.module.scss'
 import ProjectCard from '../components/ProjectCard'
-
+import { FaGithub } from 'react-icons/fa'
+import { BsCodeSlash } from 'react-icons/bs'
 
 // images
 import calculatorImage from "../images/projects/calculator.png"
@@ -38,7 +39,7 @@ export default function Home() {
               image={libraryImage}
               title="Library Reader Tracker"
               url="https://github.com/p4ckysm4cky/library_app"
-              description={<p>A <b>Object-Orientated-Programming</b> based webapp that keeps track of books that you have read. it uses <b>Javascript localstorage</b> to store the information.</p>}
+              description={<p>An <b>Object-Orientated-Programming</b> based webapp that keeps track of books that you have read. it uses <b>Javascript localstorage</b> to store the information.</p>}
             />
 
             <ProjectCard
@@ -51,7 +52,7 @@ export default function Home() {
               image={ticTacToe}
               title="Tic Tac Toe"
               url="https://github.com/p4ckysm4cky/Tic-Tac-Toe"
-              description={<p>A project I made to learn about <b>Javascript Classes</b> and <b>Object-Orientated-Programming</b>.</p>}
+              description={<p>A project I made to practise my Javascript skills.</p>}
             />
             <ProjectCard
               image={pixelDraw}
@@ -67,7 +68,26 @@ export default function Home() {
             />
 
           </div>
+
+          
       </div>
+      <footer>
+        <a href="https://github.com/p4ckysm4cky">
+          <FaGithub
+            className={styles.icons}
+          />
+        </a>
+        <p>
+          Website built with <a href="https://nextjs.org/">NextJS</a> and <a href="https://sass-lang.com/">Sass</a>
+        
+        </p>
+
+        <a href="https://github.com/p4ckysm4cky/Personal-Website">
+          <BsCodeSlash
+            className={styles.icons}
+          />
+        </a>
+      </footer>
     </div>
 
   )

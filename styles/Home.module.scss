@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+$deskop:1200px;
+$laptop:1024px;
+$tablet:768px;
+$phone:480px;
 
 $darkBlue: rgb(32, 42, 56);
 $lightBlue: rgba(147,181,227,1);
@@ -36,6 +39,11 @@ $lightBlue: rgba(147,181,227,1);
   height: 100vh;
   width: 30vw;
   display: flex;
+  @media (max-width: $tablet) {
+    position:absolute;
+    max-width: 100%;
+    height: auto;
+  }
   
 }
 
@@ -61,7 +69,7 @@ $lightBlue: rgba(147,181,227,1);
   h2 {
     text-decoration: none;
     border-bottom: 1px solid $lightBlue;
-    box-shadow: 0 -3px 0 $lightBlue inset;
+    box-shadow: 1 -3px 3 $lightBlue inset;
       
   }
 
@@ -70,7 +78,14 @@ $lightBlue: rgba(147,181,227,1);
     flex-flow: wrap;
     align-items: center;
     justify-content: center;
+    margin-bottom: 100px;
     
   }
+}
+
+.icons {
+  color:white;
+  height: 30px;
+  width: 30px;
 }
 
