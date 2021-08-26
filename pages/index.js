@@ -18,7 +18,7 @@ export default function Home() {
         <div className={styles.about}>
           <div className={styles.aboutText}>
             <h2>About</h2>
-            <p>Hi, I'm Jacky. A student studying Computer Science and Information Technology Management.</p>
+            <p>{"Hi, I'm Jacky. A student studying Computer Science and Information Technology Management."}</p>
           </div>
         </div>
       </div>

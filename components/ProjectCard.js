@@ -4,7 +4,7 @@ import styles from "../styles/ProjectCard.module.scss"
 
 function ProjectCard(props) {
     return(
-        <a href={props.url} target="_blank" >
+        <a href={props.url} target="_blank" rel="noopener noreferrer">
             <div className={styles.card}>
                 {/* <div className={styles.cardImage}> */}
                     {props.image?
