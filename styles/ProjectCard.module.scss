@@ -13,13 +13,13 @@ $phone:480px;
     margin: 40px;
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: 210px 290px;
+    grid-template-rows: 210px 90px 200px;
     border-radius: 25px;
     background-color: white;
     border-style: solid;
     border-color: $darkBlue;
     box-shadow: 10px 10px 2px $darkBlue;
-    grid-template-areas: "image" "text";
+    grid-template-areas: "image" "title" "text";
 
 
     transition: 0.5s ease;
@@ -31,12 +31,9 @@ $phone:480px;
         border-top-right-radius: 21px;
         object-fit: cover;
     } 
-    .cardText {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-
+    .cardHeader {
+        grid-area: "title";
+        text-align: center;
         h3 {
             font-size: 25px;
             text-decoration: none;
@@ -45,6 +42,17 @@ $phone:480px;
                 font-size: 20px;
             }
         }
+    }
+
+    .cardText {
+        grid-area: "text";
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        
         p {
             font-size: 16px;
             margin:5px;

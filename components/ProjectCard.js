@@ -16,8 +16,10 @@ function ProjectCard(props) {
                         <h3></h3>
                     }
                 {/* </div> */}
-                <div className={styles.cardText}>
-                    <h3>{props.title}</h3>
+                <div className={styles.cardHeader}>
+                <h3>{props.title}</h3>
+                </div>
+                <div className={styles.cardText}>                    
                     <p>{props.description}</p>
                 </div>
 
