@@ -10,6 +10,7 @@ import rockPaperScissors from "../images/projects/rock_paper_scissors.png"
 import ticTacToe from "../images/projects/tic_tac_toe.png"
 import libraryImage from "../images/projects/library.png"
 import animeSearch from "../images/projects/animeSearch.jpg"
+import taskTracker from "../images/projects/task_tracker.png"
 
 export default function Home() {
   return (
@@ -27,7 +28,13 @@ export default function Home() {
             Programming Projects
           </h2>
           {/* This is where my projects go */}
-          <div className={styles.container}> 
+          <div className={styles.container}>
+            <ProjectCard
+              image={taskTracker}
+              title="MERN Task Tracker"
+              url="https://github.com/p4ckysm4cky/mern-task-tracker"
+              description={<p>My first time making make a fullstack webapp, which helped strengthen my understanding of frontend and backend technologies.</p>}            
+            /> 
             <ProjectCard
               image={animeSearch}
               title="Anime Character Search"
@@ -66,6 +73,7 @@ export default function Home() {
               url="https://github.com/p4ckysm4cky/rock_paper_scissors"
               description={<p>I made this webapp, so I could practise the basics of <b>CSS</b> and <b>Flexbox</b>.</p>}            
             />
+            
 
           </div>
 
